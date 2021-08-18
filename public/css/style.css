@@ -1,0 +1,137 @@
+/* Master styles*/
+body {
+    font-family: "Lato", sans-serif; /*Sets default font to Lato with sans-serif as the backup font*/
+    margin: 0px; /*this margin setting overrides whatever margin setting the site had*/
+}
+
+.container {    /*targets the whole application because it's based in the container*/
+    display: grid; /*set it to a grid*/
+    grid-template-columns: 1fr; /*create these columns at 100% width*/
+}
+
+/* Nav-bar styles */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 37px;
+}
+
+.left-side{
+    display: flex;
+}
+
+/*traversing down a tree*/
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-wrapper > .right-side > div{
+    text-transform: uppercase;
+
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+/* Portfolio styles */
+
+/*Columns*/
+.portfolio-items-wrapper{ /*targets portfolio items*/
+    display: grid; /*set portfolio items to a grid*/
+    grid-template-columns: 1fr 1fr 1fr; /*adds three columns in the wrapper (it's good practice to limit columns to within your html elements)*/
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 440.25px;
+    width: 100%; /*width adjusts automatically*/
+    background-size: cover; /*When your background images are sized differnetly*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute; /*positioned at the top*/
+    top: 0;
+    display: flex; /*inside the elements, we're using flexbox*/
+    flex-direction: column; /*adding a column*/
+    justify-content: center; /*center the content left to right*/
+    align-items: center; /*evenly spaced top to bottom*/
+    height: 100%; /*automatic height of the parent element*/
+    text-align: center; /**/
+    padding-left: 100px;
+    padding-right: 100px;
+    left: 0px;
+    right: 0px;
+
+} 
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.img-text-wrapper .subtitle{
+    transition: .5s;
+    font-weight: bold;/*keep font weight the same for smooth transitions*/
+    font-size: 1em;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+    transition: 1s;
+    font-size: 1em;
+    font-weight: bold;
+    color: gold;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-brighten{
+    transition: .5s;
+    filter: brightness(100%);
+}
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-background{
+    height: 293.75px;
+    width: 100%; /*width adjusts automatically*/
+    background-size: cover; /*When your background images are sized differnetly*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}

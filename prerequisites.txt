@@ -1,0 +1,25 @@
+Prerequisites:
+4 steps to building the site
+FOLLOW ALONG.
+
+1. Build the project - DONE
+    - creating the folder
+    - adding files
+    - connecting files
+
+2. Nav Bar - DONE
+    - design says 2 links and a name
+
+3. Portfolio item grid - DONE
+    - images
+    - titles
+    - descriptions
+    - animations
+    - javascript
+
+4. About page - DONE
+    - images
+    - split column layout
+    - content
+
+/**/
